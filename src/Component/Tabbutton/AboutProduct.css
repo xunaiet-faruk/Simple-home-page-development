@@ -1,0 +1,54 @@
+:root {
+    --clr: white;
+    /* Define your color variable */
+}
+
+.shape {
+    position: absolute;
+    height: 180px;
+    background-color: white;
+    width: 55%;
+    left: 170px;
+    bottom: 1px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: 0;
+}
+
+.button-container {
+    position: relative;
+    z-index: 1;
+}
+
+.desi {
+    position: relative;
+    z-index: 2;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 20px;
+    background-color: transparent;
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    left: 181px;
+    top: -43px;
+    box-shadow: -6px 6px var(--clr);
+    
+}
+
+.box::after{
+    content: '';
+        position: absolute;
+        width: 36px;
+        height: 20px;
+        background-color:transparent;
+        z-index: 10;
+        border-top-left-radius: 20px;
+        left: 181px;
+        margin-top:157px;
+        box-shadow: -6px -6px var(--clr);
+}
